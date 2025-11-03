@@ -1,0 +1,139 @@
+
+R version 4.5.1 (2025-06-13) -- "Great Square Root"
+Copyright (C) 2025 The R Foundation for Statistical Computing
+Platform: aarch64-apple-darwin20
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+[R.app GUI 1.82 (8536) aarch64-apple-darwin20]
+
+[Workspace restored from /Users/diegonarvaez/.RData]
+[History restored from /Users/diegonarvaez/.Rapp.history]
+
+> install.packages("devtools")
+--- Please select a CRAN mirror for use in this session ---
+trying URL 'https://mirror.las.iastate.edu/CRAN/bin/macosx/big-sur-arm64/contrib/4.5/devtools_2.4.6.tgz'
+Content type 'application/x-gzip' length 457035 bytes (446 KB)
+==================================================
+downloaded 446 KB
+
+
+The downloaded binary packages are in
+	/var/folders/_c/bhg2nzpj3617xvmhy4gzwzn00000gn/T//Rtmp9M6sRL/downloaded_packages
+> 
+> library(devtools)
+Loading required package: usethis
+> 
+> create("Friedman")
+✔ Creating 'Friedman/'.
+✔ Setting active project to "/Users/diegonarvaez/Friedman".
+✔ Creating 'R/'.
+✔ Writing 'DESCRIPTION'.
+Package: Friedman
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R (parsed):
+    * First Last <first.last@example.com> [aut, cre]
+Description: What the package does (one paragraph).
+License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+✔ Writing 'NAMESPACE'.
+✔ Setting active project to "<no active project>".
+> 
+> list.files()
+ [1] "AEMR Case Study Step 2: Craft a Visual Story" 
+ [2] "AEMR_SQL_Case_Study_For_Students_131223.ipynb"
+ [3] "aemr.csv"                                     
+ [4] "aemr.db"                                      
+ [5] "anaconda_projects"                            
+ [6] "Applications"                                 
+ [7] "Applications (Parallels)"                     
+ [8] "avg_duration_by_participant.csv"              
+ [9] "Barplot-1.png"                                
+[10] "data"                                         
+[11] "Desktop"                                      
+[12] "Documents"                                    
+[13] "Downloads"                                    
+[14] "duration_barplot.png"                         
+[15] "energy_loss_by_participant.csv"               
+[16] "energy_lost_barplot.png"                      
+[17] "Friedman"                                     
+[18] "gender_mean.txt"                              
+[19] "histogram-1.png"                              
+[20] "i_students_full.csv"                          
+[21] "i_students.csv"                               
+[22] "Library"                                      
+[23] "Movies"                                       
+[24] "Music"                                        
+[25] "OneDrive - University of South Florida"       
+[26] "outage_reason_barplot.png"                    
+[27] "outage_reason_frequency.csv"                  
+[28] "Parallels"                                    
+[29] "Pictures"                                     
+[30] "polls_bar_chart.png"                          
+[31] "polls_diff_chart.png"                         
+[32] "Public"                                       
+[33] "Tutorial.accdb"                               
+[34] "Untitled.ipynb"                               
+[35] "Untitled1.ipynb"                              
+[36] "Untitled2.ipynb"                              
+> 
+> setwd("Friedman")
+> getwd()
+[1] "/Users/diegonarvaez/Friedman"
+> 
+> setwd("Friedman")
+Error in setwd("Friedman") : cannot change working directory
+> 
+> getwd()
+[1] "/Users/diegonarvaez/Friedman"
+> 
+> list.files(full.names = TRUE)
+[1] "./DESCRIPTION" "./NAMESPACE"   "./R"          
+> 
+> setwd("/Users/diegonarvaez/Friedman")
+> getwd()
+[1] "/Users/diegonarvaez/Friedman"
+> 
+> library(devtools)
+> check()
+══ Building ══════════════════════════════════════════════════════════════════════════════
+Setting env vars:
+• CFLAGS    : -Wall -pedantic
+• CXXFLAGS  : -Wall -pedantic
+• CXX11FLAGS: -Wall -pedantic
+• CXX14FLAGS: -Wall -pedantic
+• CXX17FLAGS: -Wall -pedantic
+• CXX20FLAGS: -Wall -pedantic
+── R CMD build ───────────────────────────────────────────────────────────────────────────
+══ Checking ══════════════════════════════════════════════════════════════════════════════
+Setting env vars:
+• _R_CHECK_CRAN_INCOMING_REMOTE_               : FALSE
+• _R_CHECK_CRAN_INCOMING_                      : FALSE
+• _R_CHECK_FORCE_SUGGESTS_                     : FALSE
+• _R_CHECK_PACKAGES_USED_IGNORE_UNUSED_IMPORTS_: FALSE
+• NOT_CRAN                                     : true
+Error: Could not find tools necessary to compile a package
+Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem.
+══════════════════════════════════════════════
+> build()
+── R CMD build ───────────────────────────────────────────────────────────────────────────
+[1] "/Users/diegonarvaez/Friedman_0.0.0.9000.tar.gz"
+.tar.gz"
+> 
+> 

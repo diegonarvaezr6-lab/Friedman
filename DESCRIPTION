@@ -1,0 +1,16 @@
+Package: Friedman
+Title: Tools for Exploring Florida Crime and Demographic Patterns
+Version: 0.0.0.9000
+Authors@R: 
+    person("Diego", "Narvaez", email = "diego.narvaez@usf.edu", role = c("aut", "cre"))
+Description: 
+    This package provides exploratory and visualization tools for analyzing 
+    Florida crime and demographic datasets. It includes functions for data 
+    cleaning, clustering, mapping, and statistical modeling to reveal 
+    relationships between location, income, and crime types.
+Depends: R (>= 3.1.2)
+Imports: ggplot2, dplyr, tidyr, leaflet
+License: CC0
+LazyData: true
+URL: https://github.com/diegonarvaez/Friedman
+BugReports: https://github.com/diegonarvaez/Friedman/issues
